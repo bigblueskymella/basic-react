@@ -1,3 +1,5 @@
+//Redux-tookit 리덕스 툴킷 사용시 3가지 파일 index.js / store.js
+
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addTodo, toggleTodo, deleteTodo } from "./store";
