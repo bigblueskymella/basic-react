@@ -1,0 +1,16 @@
+
+function App() {
+  function handleOnClick(){
+    alert("버튼을 클릭했어요~")
+  }
+
+  return (
+    <div className="App">
+      <div>
+        <button onClick={handleOnClick}>클릭하세요!</button>
+
+      </div>
+    </div>
+  );
+}
+export default App;
