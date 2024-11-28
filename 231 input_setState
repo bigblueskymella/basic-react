@@ -5,7 +5,7 @@ function App() {
   const [text,setText] = useState("");
   const handleOnChange = (e) => {
     console.log(e.target.value)
-    setText(e.target.value) //this!!!!
+    setText(e.target.value) //🟠this!!!!
   }
 
   return (
