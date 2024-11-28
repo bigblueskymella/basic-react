@@ -1,0 +1,20 @@
+
+function App() {
+  function handleOnClick(e){
+    console.log(e)
+    console.log(e.target.name)
+  }
+
+  return (
+    <div className="App">
+      <div>
+        {/* name값 꼭 써주기. 🟠name="왼쪽" */}
+        <button name="왼쪽" onClick={handleOnClick}>왼쪽 버튼</button>
+        <button name="오른쪽" onClick={handleOnClick}>오른쪽 버튼</button>
+      </div>
+    </div>
+  );
+}
+export default App;
+
+//왼쪽, 오른쪽 버튼 확인  name="왼쪽"
