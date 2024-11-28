@@ -20,3 +20,11 @@ function App() {
   );
 }
 export default App;
+
+//사용자가 입력한 텍스트 화면에
+//입력 폼에서 사용자가 텍스트를 입력하면 onChange 이벤트가 발생해 
+//이벤트 핸들러 handleOnChange를 호출합니다.
+//handleOnChange는 내부에서 set함수를 호출하는데,
+//인수로 현재 사용자가 입력한 텍스트를 전달
+//그 결과 text에 입력한 값이 저장되면서 state값 업데이트
+//state값 변경되면 자동 리렌더
