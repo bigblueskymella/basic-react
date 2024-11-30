@@ -1,0 +1,62 @@
+
+/* 모든 margin 과 padding 기본값 0으로 */
+*{margin: 0; padding: 0;}
+/* @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400&display=swap'); */
+
+
+/* header 시작 */
+header {
+    background-color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Avenir Next",Avenir,Roboto,"Century Gothic", "Franklin Gothic Medium","Helvetica Neue",Helvetica,Arial, sans-serif;
+}
+a:hover{color: #01a1dd;}
+
+.logo{
+    margin-left: 30px;
+}
+
+.nav a{
+    padding: 0 15px;
+}
+
+/* main 시작 */
+main{
+    height: 500px;
+}
+.dongle-bold{
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* footer 시작 */
+footer{
+    padding: 10px 50px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+i{
+    font-size: 20px;
+}
+
+@media(max-width:800px){
+
+    nav a{
+       display: none;
+    }
+   }
+   
