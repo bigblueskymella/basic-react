@@ -1,0 +1,41 @@
+main {
+    background-image: url("images/mainbg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.welcome {
+    position: relative;
+    top: 300px;
+    left: 45px;
+    font-size: 1em;
+    color: lightgray;
+    font-family: "Avenir Next", Avenir, Roboto, "Century Gothic", 
+        "Franklin Gothic Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hello {
+    position: relative;
+    top: 295px;
+    left: 45px;
+    font-size: 3em;
+    color: lightgray;
+    font-family: "Avenir Next", Avenir, Roboto, "Century Gothic", 
+        "Franklin Gothic Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+button {
+    font-weight: 400;
+    color: white;
+    border: 0;
+    background-color: #01a1dd;
+    text-shadow: none;
+    padding: 5px 24px;
+    position: relative;
+    top: 300px;
+    left: 45px;
+    cursor: pointer;
+}
