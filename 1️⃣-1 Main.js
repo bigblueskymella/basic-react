@@ -2,6 +2,7 @@ import React from "react";
 import './Main.css';
 
  const Main = (props) => { //💌1
+   console.log(props) 
   
   return (
     <div className="location">
