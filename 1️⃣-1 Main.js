@@ -3,7 +3,7 @@ import './Main.css';
 
  const Main = (props) => { //💌1
  //const Main = ({name,location}) => { //💌2
- //const Main = ({name:na, location:lo})=>{ //💌3 구조 분해 할당
+ //const Main = ({name:na, location:lo})=>{ //🟠💌3 구조 분해 할당
    console.log(props) 
   
   return (
