@@ -6,11 +6,17 @@ import Main from "./component/Main";
 const App = () => {
   const name = "한세사이버고등학교";
   const location = "아현동";
+  // 🎹객체로 만든 다음, 스프레드 연산자 활용해 전달
+  // const MainProps = {
+  //   high: "한세",
+  //   location: "아현동",
+  // };
 
   return (
     <div>
       <Header />
       <Main name={name} location={location} />
+      {/* <Main {...MainProps} /> 🎹*/}
       <Footer />
     </div>
   );
