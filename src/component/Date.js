@@ -9,6 +9,7 @@ const Date = () => {
   return (
     <div>
       <input type='date' value={date} onChange={handleOnChange}/>
+      <div>{date}</div>
     </div>
   )
 }
