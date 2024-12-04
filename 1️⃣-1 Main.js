@@ -10,7 +10,9 @@ import './Main.css';
     <div className="location">
       <h1>Main</h1>
       {props.name}는 {props.location}에 있습니다.
-      {/* {name}는 {location}에 있습니다. */}
+      {/* {name}는 {location}에 있습니다. <br/>
+      {favorList.length}개의 음식을 좋아합니다.      
+      */}
       {na}은 {lo}에 있습니다.
     </div>
   );
