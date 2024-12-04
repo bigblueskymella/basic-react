@@ -10,6 +10,7 @@ const App = () => {
   // const MainProps = {
   //   high: "한세",
   //   location: "아현동",
+  //favorList:["빵","밥","떡"]
   // };
 
   return (
