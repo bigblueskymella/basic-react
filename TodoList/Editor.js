@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Editor.css";
 
-const TodoEditor = ({onCreate}) => {
+const Editor = ({onCreate}) => {
   // 입력할 데이터를 저장할 State변수 content를 만든다
   const [content, setContent] =useState("")
   const onChangeContent=(e)=>{
