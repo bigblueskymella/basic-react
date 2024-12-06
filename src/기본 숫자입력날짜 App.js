@@ -7,11 +7,11 @@ function App() {
   return (
     <div className="App">
       <h2>Count 숫자 더하기</h2>
-      <Body />
+        <Body />
       <h2>Input 사용자 입력 관리</h2>
-      <Input />
+        <Input />
       <h2>Date 날짜 입력</h2>
-      <Date/>
+        <Date/>
     </div>
   );
 }
