@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './TodoList.css';
-import TodoItem from './TodoItem';
+import './List.css';
+import TodoItem from './Item';
 
 const TodoList = ({todo, onDelete}) => {
   const [search,setSearch]=useState("");
@@ -41,4 +41,4 @@ const TodoList = ({todo, onDelete}) => {
   )
 }
 
-export default TodoList
+export default List
