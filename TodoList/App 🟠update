@@ -27,10 +27,12 @@ function App() {
     }
     setTodo([newItem, ...todo])
     idRef.current += 1; //💌
+    localStorage.setItem("todos", JSON.stringify(todo)); //✅
   }
 
   const onDelete = (targetId)=>{
     setTodo(todo.filter((item)=>item.id!==targetId))
+    localStorage.setItem("todos", JSON.stringify(todo)); //✅
   }
 
   // 🟠 List & Item
