@@ -10,7 +10,7 @@ const TodoList = ({todo, onDelete}) => {
   }
   const getSearchResult=()=>{
     // return search ===""? todo : todo.filter((item) => item.content.includes(search))
-    return search ===""? todo : todo.filter((item) => item.content.includes(search))
+    return search ===""? todo : todo.filter((item) => item.content.toLowerCase().includes(search.toLowerCase()))
   }
 
   return (
