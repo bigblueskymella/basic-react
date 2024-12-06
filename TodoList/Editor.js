@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./TodoEditor.css";
+import "./Editor.css";
 
 const TodoEditor = ({onCreate}) => {
   // 입력할 데이터를 저장할 State변수 content를 만든다
@@ -29,4 +29,4 @@ const TodoEditor = ({onCreate}) => {
   );
 };
 
-export default TodoEditor;
+export default Editor;
