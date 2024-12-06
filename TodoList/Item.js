@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Item.css";
 
-const TodoItem = ({id, content, isDone, createdDate, onDelete}) => {
+const Item = ({id, content, isDone, createdDate, onDelete}) => {
   const onClickDelete=()=>{
     onDelete(id)
   }
