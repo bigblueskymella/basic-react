@@ -15,7 +15,7 @@ const TodoList = ({todo, onDelete}) => {
 
   return (
     <div className='TodoList'>
-       <h3>😁 Todo List 컴포넌트 🌴 기록한 내용 보기</h3>
+       <h3>😁 List 컴포넌트 🌴 기록한 내용 보기</h3>
        <input
         value={search}
         onChange={onChangeSearch}
