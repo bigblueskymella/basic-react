@@ -16,7 +16,7 @@ const TodoEditor = ({onCreate}) => {
 
   return (
     <div className="TodoEditor">
-      <h3>😋 TodoEditor 컴포넌트 🌴새롭게 작성할 곳 🎹</h3>
+      <h3>😋 Editor 컴포넌트 🌴새롭게 작성할 곳 🎹</h3>
       <div className="editor_wrapper">
         <input
           value={content}
