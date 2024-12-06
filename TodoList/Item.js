@@ -10,7 +10,7 @@ const TodoItem = ({id, content, isDone, createdDate, onDelete}) => {
       <div className="checkbox_col">
         <input type="checkbox" checked={isDone}/>
       </div>
-      <div>할 일 TodoItem {content}</div>
+      <div>할 일 Item {content}</div>
       {/* <div>{new Date().toLocaleDateString()}</div> */}
       {/* <div>{new Date(createdDate).toLocaleDateString()}</div> */}
       <div>{new Date().toLocaleDateString()}</div>
