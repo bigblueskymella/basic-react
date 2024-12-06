@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './List.css';
 import TodoItem from './Item';
 
-const TodoList = ({todo, onDelete}) => {
+const List = ({todo, onDelete}) => {
   const [search,setSearch]=useState("");
   const onChangeSearch=(e)=>{
     console.log("검색어 : ", e.target.value)
