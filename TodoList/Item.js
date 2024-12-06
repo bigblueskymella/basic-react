@@ -1,5 +1,5 @@
 import React from 'react'
-import "./TodoItem.css";
+import "./Item.css";
 
 const TodoItem = ({id, content, isDone, createdDate, onDelete}) => {
   const onClickDelete=()=>{
@@ -21,4 +21,4 @@ const TodoItem = ({id, content, isDone, createdDate, onDelete}) => {
   )
 }
 
-export default TodoItem
+export default Item
