@@ -1,0 +1,94 @@
+import React, { useState, useRef } from 'react'
+import Header from './component/Header'
+import Editor from './component/Editor'
+import List from './component/List'
+import './App.css'
+
+const mockTodo = [
+  {
+    id: 0,
+    isDone: false,
+    content: "React 공부하기",
+    createdDate: new Date().toLocaleDateString(),
+  },
+  {
+    id: 1,
+    isDone: false,
+    content: "빨래 널기",
+    createdDate: new Date().toLocaleDateString(),
+  },
+  {
+    id: 2,
+    isDone: false,
+    content: "줄넘기 하기",
+    createdDate: new Date().toLocaleDateString(),
+  },
+];
+
+const App = () => {
+  const [todo, setTodo]=useState(mockTodo)
+  const idRef = useRef(3)
+// 사용자가 작성한 할 일 받아 매개변수content에 저장
+  const onCreate = (content)=>{
+    const newItem = {
+      id:idRef.current,
+      isDone:false,
+      content,
+      createdDate:new Date().toLocaleDateString(),
+    }
+    setTodo([newItem, ...todo])
+    idRef.current+=1;
+  }
+
+  // targetId 어떤걸 선택했는데 넘겨받음
+  const onUpdate = (targetId) => {
+    // setTodo(
+    //   todo.map(
+    //     (item)=>{
+    //       if(item.id === targetId){
+    //         return {
+    //           ...item,
+    //           isDone: !item.isDone,
+    //         }
+    //       }else{
+    //         return item;
+    //       }
+    //     }
+    //   )
+    // )
+    setTodo(todo.map((item)=>item.id===targetId?{...item, isDone:!item.isDone} : item))
+  }
+
+  const onDelete = (targetId) => {
+    setTodo(todo.filter((it)=>it.id !== targetId))
+  }
+
+  return (
+    <div className='App'>
+      <Header/>
+      <Editor onCreate={onCreate}/>
+      {/* 3️⃣todo배열을 props로 전달 */}
+      <List todo={todo} onUpdate={onUpdate} onDelete={onDelete}/>
+    </div>
+  )
+}
+
+export default App
+
+// 보통 리스트 형태의 데이터 저장할 때 배열 이용
+// 기초데이터 [빈]배열, 데이터베이스 역할 수행
+
+🟡
+.App {
+  /* text-align: center; */
+  max-width: 600px;
+  border: 1px solid lightgray;
+  margin: 10px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  /* 요소 크기 어떤 것을 기준으로 계산할지 정하는 속성. 
+  내부 여백이 요소의 크기에 영향을 미치지 않도록 설정. */
+
+  display: flex;
+  flex-direction: column;
+}
