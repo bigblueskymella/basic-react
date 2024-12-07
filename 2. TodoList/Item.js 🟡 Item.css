@@ -1,0 +1,47 @@
+import React from 'react'
+import './Item.css'
+
+// 구조분해 할당해 가져옴
+const Item = ({id, isDone, content, createdDate, onUpdate, onDelete}) => {
+  const onClickDelete = () => {
+    onDelete(id);
+  }
+  const onChangeCheckbox = () =>{
+    onUpdate(id)
+  }
+  return (
+    <div className='Item'>
+      <label>
+      <div><input onChange={onChangeCheckbox} checked={isDone} type='checkbox'/></div>
+      <div className='title'>{content}</div>
+      <div className='date'>{new Date(createdDate).toLocaleDateString()}</div>
+      <div className='btn'><button onClick={onClickDelete}>삭제</button></div>
+      </label>
+    </div>
+  )
+}
+
+export default Item
+
+
+🟡
+.Item label{
+  width: 450px;
+  display: flex;  
+  justify-content: space-around;
+  border-bottom: 1px solid lightgray;
+}
+
+.Item .date{
+  font-size: 16px;
+  color: gray;
+}
+
+.Item .btn{
+  cursor: pointer;
+  color: gray;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
