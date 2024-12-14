@@ -1,0 +1,18 @@
+.DiaryItem {
+/* border: solid 1px; */
+display: flex;
+justify-content: space-around;
+background-color: beige;
+
+}
+.DiaryItem img{
+  width: 120px;
+  border: 3px dashed yellowgreen;
+  border-radius: 20px;
+}
+.DiaryItem .date_wrapper{
+width: 50%;
+}
+.DiaryItem .date_wrapper div{
+  border-bottom: 3px solid lightgray;
+}

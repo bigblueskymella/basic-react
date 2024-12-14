@@ -1,0 +1,6 @@
+.DiaryList{
+  border: solid sienna;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
